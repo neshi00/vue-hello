@@ -10,7 +10,15 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{messaggio}}</h1>
+      <h1 :class="h1Colors">{{messaggio}}</h1>
+
+      <img :src="immagineRandom" alt="" />
+
+      <div>
+        Scrivi qui il tuo nome e poi clicca :
+        <input v-model="input" />
+        <button @click="inviaNome">clicca qui</button>
+      </div>
     </div>
 
     <script src="./js/script.js"></script>
